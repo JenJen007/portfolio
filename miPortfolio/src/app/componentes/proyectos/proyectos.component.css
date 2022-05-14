@@ -1,0 +1,27 @@
+.row{
+    background-color: rgb(225 227 245);
+    padding: 20px;
+}
+.contenedor{
+    width: auto;
+}
+h1{
+    font-family: 'Charm', cursive;
+}
+.imgTexto{
+    display: inline-block;
+    text-align: justify;
+}
+.proyectoImg{
+    box-shadow: 10px 10px 30px rgb(22, 1, 82);
+    border-radius: 10px;
+}
+h3{
+    font-weight: bold;
+    font-family: 'Arapey', serif;
+    margin-top: 25px;
+}
+p{
+    font-family: 'Baskervville', serif;
+    font-size: 20px;
+}

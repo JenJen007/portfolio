@@ -1,0 +1,59 @@
+<div class="row">
+    <div>
+        <div class="btn">
+            <input type="image" src="../../../assets/img/14-modal.png" class="btn" 
+            data-bs-toggle="modal" data-bs-target="#miModal"/>
+            <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="miModalLabel">HOLA</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <div class="modal-body">
+                        <h5>Elige y ordena los idiomas con su respectiva pronunciación</h5>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <audio id="miAudio" controls onclick="playAudio('miAudio')">
+            <source src="../../../assets/img/01-annyeonghaseyo.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="miAudio" controls onclick="playAudio('miAudio')">
+            <source src="../../../assets/img/02-hello.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="miAudio" controls onclick="playAudio('miAudio')">
+            <source src="../../../assets/img/03-ni hao.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="miAudio" controls onclick="playAudio('miAudio')">
+            <source src="../../../assets/img/04-bonjour.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <div class="wrapper">
+        <div>
+          <div class="Transfer Items Between Lists">
+            <div class="container">
+              <h2>Idiomas</h2>
+              <div cdkDropList #idiomasList="cdkDropList" [cdkDropListData]="IdiomasList"
+                [cdkDropListConnectedTo]="[doneIdiomaList]" class="idioma-list" (cdkDropListDropped)="onDrop($event)">
+                <div class="idioma-block" *ngFor="let idiomasList of IdiomasList" cdkDrag>{{idiomasList}}</div>
+              </div>
+            </div>
+            <div class="container">
+              <h2>Pronunciación</h2>
+              <div cdkDropList #doneIdiomaList="cdkDropList" [cdkDropListData]="IdiomasPronunciacion"
+                [cdkDropListConnectedTo]="[idiomasList]" class="idioma-list" (cdkDropListDropped)="onDrop($event)">
+                <div class="idioma-block" *ngFor="let idiomasPronunciacion of IdiomasPronunciacion" cdkDrag>{{idiomasPronunciacion}}</div>
+              </div>
+            </div>
+        </div>
+        </div>
+    
+    </div>
+    </div>

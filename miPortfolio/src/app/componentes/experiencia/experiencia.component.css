@@ -1,0 +1,37 @@
+.row{
+    padding: 20px;
+}
+div{
+    background: rgb(225 227 245);
+}
+#BB{
+    border: 3rem;
+    border-color: transparent;
+    border-radius: 10%;
+    box-shadow: 3px 3px 3px 3px grey;
+}
+ul{
+    list-style: none;
+}
+h1, h3{
+    display: inline;
+}
+#establecimiento{
+    font-family: 'Arapey', serif;
+}
+#cargo{
+    font-weight: bold;
+    font-family: 'Arapey', serif;
+    font-size: 27px;
+    margin-top: 2%;
+}
+#aptitudes{
+    font-family: 'Baskervville', serif;
+    font-size: 20px;
+}
+h1{
+    font-family: 'Charm', cursive;
+}
+h3{
+    font-family: 'Arapey', serif;
+}

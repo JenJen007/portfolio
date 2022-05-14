@@ -1,0 +1,32 @@
+.row{
+    padding: 15px;
+}
+div{
+    background: rgb(225 227 245);
+    text-align: center;
+}
+
+.card{
+    border:0px;
+}
+
+#mifoto{
+    border-radius: 25%;
+}
+
+#name{
+    font-weight: bold;
+    font-family: 'Charm', cursive;
+   font-size: 30px;
+}
+#titulo{
+    font-family: 'Arapey', serif;
+    font-size: 20px;  
+}
+p{
+    font-family: 'Arapey', serif;
+    font-size: 20px;
+}
+h1{
+    font-family: 'Charm', cursive;
+}
